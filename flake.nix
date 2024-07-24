@@ -24,8 +24,10 @@
     heist-extra.url = "github:srid/heist-extra";
     heist-extra.flake = false;
 
-    unionmount.url = "github:srid/unionmount";
+    unionmount.url = "github:gjz010-Forks/unionmount";
     unionmount.flake = false;
+    hfsnotify.url = "github:gjz010-Forks/hfsnotify/c1d2817614eaba6f03b1022635b2cdc1474d28e8";
+    hfsnotify.flake = false;
 
     commonmark-simple.url = "github:srid/commonmark-simple";
     commonmark-simple.flake = false;
@@ -74,7 +76,7 @@
             unionmount.source = inputs.unionmount;
             commonmark-simple.source = inputs.commonmark-simple;
             commonmark-wikilink.source = inputs.commonmark-wikilink;
-            fsnotify.source = "0.4.1.0"; # Not in nixpkgs, yet.
+            fsnotify.source = inputs.hfsnotify;
             ghcid.source = "0.8.8";
             heist-extra.source = inputs.heist-extra;
           };
